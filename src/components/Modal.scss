@@ -70,6 +70,53 @@
       color: white;
     }
   }
+
+  .modal-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+
+    .modal-left {
+      .modal-price {
+        display: flex;
+        padding: 7px 15px 7px 0;
+        align-items: center;
+
+        h4 {
+          color: #8a0618;
+        }
+
+        .modal-amount {
+          margin-left: 20px;
+          padding: 1.5px 8px;
+          border: 2px solid #f4f4f4;
+          border-radius: 5px;
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+        }
+      }
+    }
+
+    .modal-right {
+      button {
+        color: #8a0618;
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid #8a0618;
+        padding: 3px 17px;
+        border-radius: 10px;
+        margin-left: 1rem;
+        transition: 0.1s ease;
+
+        &:hover,
+        &:active {
+          background-color: #49040c;
+          border-color: #49040c;
+          color: white;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
