@@ -7,7 +7,7 @@ const Header = ({ setCartIsShown }) => {
   return (
     <>
       <header className="header">
-        <h1>Food Order App</h1>
+        <h1>HumangHell’s Burger</h1>
         <Button setCartIsShown={setCartIsShown}>Cart</Button>
       </header>
       <div className="main-image">

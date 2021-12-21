@@ -18,7 +18,7 @@ const Button = ({ setCartIsShown }) => {
       <span className="icon">
         <MdAddShoppingCart size="2rem" color="white" />
       </span>
-      <span>Your Cart</span>
+      <span className="button-text">Your Cart</span>
       <span className="badge ">{totalCartItems}</span>
     </button>
   );

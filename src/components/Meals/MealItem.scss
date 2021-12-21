@@ -1,41 +1,63 @@
 .meal {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
 
-  h3 {
-    margin: 0 0 0.25rem 0;
+  .meal-left {
+    max-width: 20rem;
+    padding: 0 1rem 0 0;
+
+    h3 {
+      margin: 0 0 0.25rem 0;
+    }
+
+    .description {
+      font-style: italic;
+    }
+
+    .price {
+      margin-top: 0.25rem;
+      font-weight: bold;
+      color: #8a0618;
+      font-size: 1.25rem;
+    }
   }
 
-  .description {
-    font-style: italic;
+  .meal-right {
+    button {
+      font: inherit;
+      cursor: pointer;
+      background-color: #8a0618;
+      border: 1px solid #8a0618;
+      color: white;
+      padding: 0.25rem 2rem;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: all 0.2s ease;
+      text-align: right;
+
+      &:hover,
+      &:active {
+        background-color: #49040c;
+        border-color: #49040c;
+      }
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  .meal-right {
+    button {
+      padding: 0.25rem 1rem;
+    }
   }
 
-  .price {
-    margin-top: 0.25rem;
-    font-weight: bold;
-    color: #8a0618;
-    font-size: 1.25rem;
-  }
-
-  button {
-    font: inherit;
-    cursor: pointer;
-    background-color: #8a0618;
-    border: 1px solid #8a0618;
-    color: white;
-    padding: 0.25rem 2rem;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: all 0.2s ease;
-    text-align: right;
-
-    &:hover,
-    &:active {
-      background-color: #49040c;
-      border-color: #49040c;
+  .meal-left {
+    .description {
+      font-size: 0.8rem;
     }
   }
 }

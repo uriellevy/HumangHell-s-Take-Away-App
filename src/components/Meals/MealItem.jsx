@@ -23,13 +23,13 @@ const MealItem = (props) => {
 
   return (
     <li className="meal">
-      <div>
+      <div className="meal-left">
         <h3>{props.name}</h3>
         <div className="description">{props.description}</div>
         <div className="price">${props.price.toFixed(2)}</div>
       </div>
-      <div>
-        <button onClick={() => onAdd(props.meal)}>Add To Cart</button>
+      <div className="meal-right">
+        <button onClick={() => onAdd(props.meal)}>+Add</button>
       </div>
     </li>
   );
