@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import "./Modal.scss";
 import { MealsContext } from "./store/MealsContext";
 import { MdCheckCircleOutline } from "react-icons/md";
-import RingLoader from "react-spinners/RingLoader";
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 const Modal = ({ setCartIsShown }) => {
   const [isOrdered, setIsOrdered] = useState(false);
@@ -26,7 +26,7 @@ const Modal = ({ setCartIsShown }) => {
   //   setIsOrdered(true);
   // }, []);
 
-  console.log(isOrdered);
+  // console.log(isOrdered);
 
   const totalAmount = cartItems
     .reduce((acc, curr) => {
@@ -72,17 +72,16 @@ const Modal = ({ setCartIsShown }) => {
   return (
     <div>
       <div className="backdrop" />
-      {isLoading ? (
-        <RingLoader
-          color={"#fff"}
-          loading={isLoading}
-          size={100}
-          className="spinner"
-        />
-      ) : (
-        <div className="modal">
-          {cartItems.length === 0 && <h3>No items added</h3>}
-
+      <div className={isLoading ? "hidden" : "modal"}>
+        {cartItems.length === 0 && <h3>No items added</h3>}
+        {isLoading ? (
+          <PacmanLoader
+            color={"#fff"}
+            loading={isLoading}
+            size={50}
+            className="spinner"
+          />
+        ) : (
           <div className="container">
             {cartItems.length > 0 && isOrdered ? (
               <div className="modal-success">
@@ -142,8 +141,8 @@ const Modal = ({ setCartIsShown }) => {
               </button>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
