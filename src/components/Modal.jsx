@@ -7,26 +7,19 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 const Modal = ({ setCartIsShown }) => {
   const [isOrdered, setIsOrdered] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [orderButtonWork, setOrderButtonWork] = useState(true);
   const [cartItems, setCartItems] = useContext(MealsContext);
 
   const orderedHandle = () => {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
+      setOrderButtonWork(false);
+      setIsOrdered(true);
     }, 4000);
-    setIsOrdered(true);
   };
   // console.log(isOrdered);
-
-  // useEffect(() => {
-  //   setIsLoading(true);
-  //   setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 4000);
-  //   setIsOrdered(true);
-  // }, []);
-
-  // console.log(isOrdered);
+  console.log(orderButtonWork);
 
   const totalAmount = cartItems
     .reduce((acc, curr) => {
@@ -40,6 +33,7 @@ const Modal = ({ setCartIsShown }) => {
     if (isOrdered) {
       setCartItems([]);
     }
+    setOrderButtonWork(true);
   };
 
   const onAdd = (meal) => {
@@ -72,9 +66,9 @@ const Modal = ({ setCartIsShown }) => {
   return (
     <div>
       <div className="backdrop" />
-      <div className={isLoading ? "hidden" : "modal"}>
+      <div className={isLoading && orderButtonWork ? "hidden" : "modal"}>
         {cartItems.length === 0 && <h3>No items added</h3>}
-        {isLoading ? (
+        {isLoading && orderButtonWork ? (
           <PacmanLoader
             color={"#fff"}
             loading={isLoading}
@@ -101,7 +95,7 @@ const Modal = ({ setCartIsShown }) => {
                   </ul>
                 </div>
                 <p className="ready-text">
-                  Your order w'll be ready to take away in 20 min
+                  Your order w'll be ready to take away in 20 minutes
                 </p>
               </div>
             ) : (
