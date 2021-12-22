@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import Header from "../Header";
 import Modal from "../Modal";
-import MealsSummary from "./MealsSummary";
+import MealsSummary from "../Meals/MealsSummary";
 import { MealsContext } from "../store/MealsContext";
 import { availableMeals } from "../../mock-meals";
 import "./MealsPage.scss";
-import MealItem from "./MealItem";
+import MealItem from "../Meals/MealItem";
 
 const MealsPage = () => {
   const [cartItems, setCartItems, cartIsShown, setCartIsShown] =

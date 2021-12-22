@@ -83,7 +83,7 @@ export const availableSharing = [
   },
   {
     id: "m13",
-    name: "Pork and Gouda Sausage",
+    name: "Pork & Gouda Sausage",
     description:
       "Half meter long pork Sausage filled with loads of Gouda cheese",
     price: 9.5,

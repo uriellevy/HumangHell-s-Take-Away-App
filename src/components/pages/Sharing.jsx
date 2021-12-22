@@ -3,7 +3,7 @@ import Header from "../Header";
 import Modal from "../Modal";
 import { MealsContext } from "../store/MealsContext";
 import { availableSharing } from "../../mock-meals";
-import "../Meals/MealsPage.scss";
+import "../pages/MealsPage.scss";
 import MealItem from "../Meals/MealItem";
 
 const Sharing = () => {
