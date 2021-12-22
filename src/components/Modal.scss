@@ -125,6 +125,11 @@
     margin-top: 7px;
 
     .modal-left {
+      width: 50%;
+      h3 {
+        text-align: left;
+        width: 100%;
+      }
       .modal-price {
         display: flex;
         padding: 2px 15px 2px 0;
