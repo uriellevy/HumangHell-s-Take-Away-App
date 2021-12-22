@@ -13,6 +13,10 @@ const Alcohol = () => {
     <div>
       {cartIsShown && <Modal setCartIsShown={setCartIsShown} />}
       <Header setCartIsShown={setCartIsShown} />
+      <section className="summary">
+        <h3>All our beers comes in 330 ml bottles</h3>
+        <p>54 Abbey Road, London, UK</p>
+      </section>
       <main>
         <section className="meals">
           {availableAlcohol.map((meal) => (

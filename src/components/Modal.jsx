@@ -11,6 +11,9 @@ const Modal = ({ setCartIsShown }) => {
   const [cartItems, setCartItems] = useContext(MealsContext);
 
   const orderedHandle = () => {
+    if (cartItems.length === 0) {
+      setOrderButtonWork(false);
+    }
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);

@@ -22,19 +22,27 @@ const NavBar = () => {
         </div>
         <li className="nav-text">
           <FaHamburger size="2rem" />
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/" exact activeClassName="active-nav-link">
+            Home
+          </NavLink>
         </li>
         <li className="nav-text">
           <GiKnifeFork size="2rem" />
-          <NavLink to="/sharing">Sharing</NavLink>
+          <NavLink to="/sharing" activeClassName="active-nav-link">
+            Sharing
+          </NavLink>
         </li>
         <li className="nav-text">
           <GiWaterBottle size="2rem" />
-          <NavLink to="/drinks">Soft Drinks</NavLink>
+          <NavLink to="/drinks" activeClassName="active-nav-link">
+            Soft Drinks
+          </NavLink>
         </li>
         <li className="nav-text">
           <FaBeer size="2rem" />
-          <NavLink to="/alcohol">Alcohol</NavLink>
+          <NavLink to="/alcohol" activeClassName="active-nav-link">
+            Alcohol
+          </NavLink>
         </li>
       </ul>
 
