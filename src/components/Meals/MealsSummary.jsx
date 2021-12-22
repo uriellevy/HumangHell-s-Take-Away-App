@@ -4,6 +4,7 @@ import "./MealsSummary.scss";
 const MealsSummary = () => {
   return (
     <section className="summary">
+      <h1>HumangHell’s Burger</h1>
       <h2>The New Burger in Town</h2>
       <p>
         Choose your favorite HellBurger from our broad selection of available

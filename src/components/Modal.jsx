@@ -19,7 +19,7 @@ const Modal = ({ setCartIsShown }) => {
     }, 4000);
   };
   // console.log(isOrdered);
-  console.log(orderButtonWork);
+  // console.log(orderButtonWork);
 
   const totalAmount = cartItems
     .reduce((acc, curr) => {
@@ -69,12 +69,7 @@ const Modal = ({ setCartIsShown }) => {
       <div className={isLoading && orderButtonWork ? "hidden" : "modal"}>
         {cartItems.length === 0 && <h3>No items added</h3>}
         {isLoading && orderButtonWork ? (
-          <PacmanLoader
-            color={"#fff"}
-            loading={isLoading}
-            size={50}
-            className="spinner"
-          />
+          <PacmanLoader color={"#fff"} loading={isLoading} size={50} />
         ) : (
           <div className="container">
             {cartItems.length > 0 && isOrdered ? (

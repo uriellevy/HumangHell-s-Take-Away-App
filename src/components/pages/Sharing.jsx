@@ -1,13 +1,12 @@
 import React, { useContext } from "react";
 import Header from "../Header";
 import Modal from "../Modal";
-import MealsSummary from "./MealsSummary";
 import { MealsContext } from "../store/MealsContext";
-import { availableMeals } from "../../mock-meals";
-import "./MealsPage.scss";
-import MealItem from "./MealItem";
+import { availableSharing } from "../../mock-meals";
+import "../Meals/MealsPage.scss";
+import MealItem from "../Meals/MealItem";
 
-const MealsPage = () => {
+const Sharing = () => {
   const [cartItems, setCartItems, cartIsShown, setCartIsShown] =
     useContext(MealsContext);
   // console.log(cartIsShown);
@@ -16,9 +15,8 @@ const MealsPage = () => {
       {cartIsShown && <Modal setCartIsShown={setCartIsShown} />}
       <Header setCartIsShown={setCartIsShown} />
       <main>
-        <MealsSummary />
         <section className="meals">
-          {availableMeals.map((meal) => (
+          {availableSharing.map((meal) => (
             <MealItem
               key={meal.id}
               id={meal.id}
@@ -34,4 +32,4 @@ const MealsPage = () => {
   );
 };
 
-export default MealsPage;
+export default Sharing;

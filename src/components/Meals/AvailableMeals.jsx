@@ -1,5 +1,7 @@
+// DELETE
+
 import React from "react";
-import meals from "../../mock-meals.js";
+import { availableMeals } from "../../mock-meals.js";
 import "./AvailableMeals.scss";
 import MealItem from "./MealItem";
 
@@ -8,7 +10,7 @@ const AvailableMeals = () => {
 
   return (
     <section className="meals">
-      {meals.map((meal) => (
+      {availableMeals.map((meal) => (
         <MealItem
           key={meal.id}
           id={meal.id}

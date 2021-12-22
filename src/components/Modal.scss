@@ -21,10 +21,6 @@
   animation: slide-down 300ms ease-out forwards;
   display: flex;
   justify-content: center;
-
-  .spinner {
-    color: #fff;
-  }
 }
 
 .modal {
@@ -194,6 +190,8 @@
     .ready-text {
       color: rgba(0, 0, 0, 0.87);
       margin-top: 20px;
+      font-style: oblique;
+      font-weight: 600;
     }
 
     .success-details {
