@@ -71,7 +71,7 @@ export const availableSharing = [
     id: "m11",
     name: "Chicken Wings",
     description:
-      "Contains the Humongous famous peanut butter and sweet chili gravy. Served in the portions of 1 kilo",
+      "Contains the HumongHell's famous peanut butter and sweet chili gravy. Served in the portions of 1 kilo",
     price: 12.5,
   },
   {
@@ -206,7 +206,7 @@ export const gallery = [
   {
     id: "m34",
     name: "Stuffed Mushrooms",
-    url: "https://images.unsplash.com/photo-1585297100016-9f49ab8c3c08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=877&q=80",
+    url: "https://images.unsplash.com/photo-1551447456-b9ef333d1ef1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
   },
 
   {
@@ -217,7 +217,7 @@ export const gallery = [
   {
     id: "m38",
     name: "Lamb Sausage",
-    url: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80",
+    url: "https://images.unsplash.com/photo-1614398751058-eb2e0bf63e53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1014&q=80",
   },
   {
     id: "m39",
