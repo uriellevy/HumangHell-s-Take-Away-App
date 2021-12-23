@@ -13,13 +13,14 @@ const Modal = ({ setCartIsShown }) => {
   const orderedHandle = () => {
     if (cartItems.length === 0) {
       setOrderButtonWork(false);
+    } else {
+      setIsLoading(true);
+      setTimeout(() => {
+        setIsLoading(false);
+        setOrderButtonWork(false);
+        setIsOrdered(true);
+      }, 4000);
     }
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-      setOrderButtonWork(false);
-      setIsOrdered(true);
-    }, 4000);
   };
   // console.log(isOrdered);
   // console.log(orderButtonWork);
@@ -127,7 +128,9 @@ const Modal = ({ setCartIsShown }) => {
               </button>
               <button
                 onClick={orderedHandle}
-                className={isOrdered ? "disabled" : "button"}
+                className={
+                  isOrdered || cartItems.length === 0 ? "disabled" : "button"
+                }
               >
                 Order
               </button>
