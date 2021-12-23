@@ -9,6 +9,7 @@ const Modal = ({ setCartIsShown }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [orderButtonWork, setOrderButtonWork] = useState(true);
   const [cartItems, setCartItems] = useContext(MealsContext);
+  const orderNum = Math.floor(Math.random() * 10000);
 
   const orderedHandle = () => {
     if (cartItems.length === 0) {
@@ -82,7 +83,7 @@ const Modal = ({ setCartIsShown }) => {
 
                 <div className="success-text">
                   <p>Awesome!</p>
-                  <p>Your order is accepted</p>
+                  <p> Order number {orderNum} is accepted</p>
                 </div>
                 <div>
                   <ul className="success-details">

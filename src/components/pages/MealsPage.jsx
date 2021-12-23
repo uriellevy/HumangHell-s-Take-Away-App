@@ -6,6 +6,7 @@ import { MealsContext } from "../store/MealsContext";
 import { availableMeals } from "../../mock-meals";
 import "./MealsPage.scss";
 import MealItem from "../Meals/MealItem";
+import Gallery from "../Gallery";
 
 const MealsPage = () => {
   const [cartItems, setCartItems, cartIsShown, setCartIsShown] =
@@ -29,6 +30,7 @@ const MealsPage = () => {
             />
           ))}
         </section>
+        <Gallery />
       </main>
     </div>
   );

@@ -176,3 +176,67 @@ export const availableAlcohol = [
     price: 3.5,
   },
 ];
+
+export const gallery = [
+  {
+    id: "m30",
+    name: "Onion Rings",
+    url: "https://images.unsplash.com/photo-1550317138-10000687a72b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1220&q=80",
+  },
+  {
+    id: "m31",
+    name: "Beef Empanadas",
+    url: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+  },
+  {
+    id: "m32",
+    name: "Potatoes Empandas",
+    url: "https://images.unsplash.com/photo-1457460866886-40ef8d4b42a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+  {
+    id: "m33",
+    name: "Chicken Wings",
+    url: "https://images.unsplash.com/photo-1582295523904-8ab53717447c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+  {
+    id: "m36",
+    name: "Pork & Gouda Sausage",
+    url: "https://images.unsplash.com/photo-1609525313344-a56b96f20718?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
+  },
+  {
+    id: "m34",
+    name: "Stuffed Mushrooms",
+    url: "https://images.unsplash.com/photo-1585297100016-9f49ab8c3c08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=877&q=80",
+  },
+
+  {
+    id: "m37",
+    name: "Lamb Sausage",
+    url: "https://images.unsplash.com/photo-1625938146369-adc83368bda7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
+  },
+  {
+    id: "m38",
+    name: "Lamb Sausage",
+    url: "https://images.unsplash.com/photo-1567620832903-9fc6debc209f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=780&q=80",
+  },
+  {
+    id: "m39",
+    name: "Lamb Sausage",
+    url: "https://images.unsplash.com/photo-1533060496641-85192bac9b17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+  {
+    id: "m40",
+    name: "Lamb Sausage",
+    url: "https://images.unsplash.com/photo-1550674640-edeb406d94bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+  },
+  {
+    id: "m41",
+    name: "Lamb Sausage",
+    url: "https://images.unsplash.com/photo-1524237629218-0a109277890c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+  },
+  {
+    id: "m42",
+    name: "Lamb Sausage",
+    url: "https://images.unsplash.com/photo-1593759608142-e9b18c0dbe86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=962&q=80",
+  },
+];

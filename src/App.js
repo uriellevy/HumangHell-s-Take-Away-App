@@ -6,6 +6,7 @@ import Sharing from "./components/pages/Sharing";
 import Drinks from "./components/pages/Drinks";
 import Alcohol from "./components/pages/Alcohol";
 import Footer from "./components/Footer.jsx";
+
 function App() {
   return (
     <MealsProvider>
