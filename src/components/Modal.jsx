@@ -1,15 +1,15 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import "./Modal.scss";
 import { MealsContext } from "./store/MealsContext";
 import { MdCheckCircleOutline } from "react-icons/md";
 import PacmanLoader from "react-spinners/PacmanLoader";
 
-const Modal = ({ setCartIsShown }) => {
+const Modal = () => {
   const [isOrdered, setIsOrdered] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [orderButtonWork, setOrderButtonWork] = useState(true);
-  const [cartItems, setCartItems] = useContext(MealsContext);
-  const orderNum = Math.floor(Math.random() * 10000);
+  const [cartItems, setCartItems, cartIsShown, setCartIsShown] =
+    useContext(MealsContext);
 
   const orderedHandle = () => {
     if (cartItems.length === 0) {
@@ -83,7 +83,7 @@ const Modal = ({ setCartIsShown }) => {
 
                 <div className="success-text">
                   <p>Awesome!</p>
-                  <p> Order number {orderNum} is accepted</p>
+                  <p>Your order is accepted</p>
                 </div>
                 <div>
                   <ul className="success-details">

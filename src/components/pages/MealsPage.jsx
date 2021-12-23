@@ -9,20 +9,18 @@ import MealItem from "../Meals/MealItem";
 import Gallery from "../Gallery";
 
 const MealsPage = () => {
-  const [cartItems, setCartItems, cartIsShown, setCartIsShown] =
-    useContext(MealsContext);
+  const [cartItems, setCartItems, cartIsShown] = useContext(MealsContext);
   // console.log(cartIsShown);
   return (
     <div>
-      {cartIsShown && <Modal setCartIsShown={setCartIsShown} />}
-      <Header setCartIsShown={setCartIsShown} />
+      {cartIsShown && <Modal />}
+      <Header />
       <main>
         <MealsSummary />
         <section className="meals">
           {availableMeals.map((meal) => (
             <MealItem
               key={meal.id}
-              id={meal.id}
               price={meal.price}
               description={meal.description}
               name={meal.name}

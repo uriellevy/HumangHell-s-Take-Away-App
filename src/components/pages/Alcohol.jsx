@@ -7,12 +7,11 @@ import "../pages/MealsPage.scss";
 import MealItem from "../Meals/MealItem";
 
 const Alcohol = () => {
-  const [cartItems, setCartItems, cartIsShown, setCartIsShown] =
-    useContext(MealsContext);
+  const [cartItems, setCartItems, cartIsShown] = useContext(MealsContext);
   return (
     <div>
-      {cartIsShown && <Modal setCartIsShown={setCartIsShown} />}
-      <Header setCartIsShown={setCartIsShown} />
+      {cartIsShown && <Modal />}
+      <Header />
       <section className="summary">
         <h3>All our beers comes in 330 ml bottles</h3>
         <p>54 Abbey Road, London, UK</p>
@@ -22,7 +21,6 @@ const Alcohol = () => {
           {availableAlcohol.map((meal) => (
             <MealItem
               key={meal.id}
-              id={meal.id}
               price={meal.price}
               description={meal.description}
               name={meal.name}

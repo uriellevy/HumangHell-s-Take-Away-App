@@ -1,9 +1,9 @@
 import React from "react";
 import "./Gallery.scss";
 import { gallery } from "../mock-meals";
+// console.log(gallery);
 
 const Gallery = () => {
-  console.log(gallery);
   return (
     <div className="gallery-container">
       <div className="gallery">

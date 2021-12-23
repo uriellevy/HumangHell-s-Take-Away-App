@@ -6,10 +6,12 @@ const MealItem = (props) => {
   const [cartItems, setCartItems] = useContext(MealsContext);
   // console.log(cartItems);
   // console.log(props.id);
+  // console.log(props.meal);
 
   const onAdd = (meal) => {
-    const exist = cartItems.find((x) => x.id === props.id);
+    const exist = cartItems.find((x) => x.id === meal.id);
     // console.log(exist);
+
     if (exist) {
       setCartItems(
         cartItems.map((x) =>
@@ -19,6 +21,8 @@ const MealItem = (props) => {
     } else {
       setCartItems([...cartItems, { ...meal, qty: 1 }]);
     }
+
+    console.log(cartItems);
   };
 
   return (

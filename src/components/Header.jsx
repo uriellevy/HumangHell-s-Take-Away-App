@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Header.scss";
+import { MealsContext } from "../components/store/MealsContext";
 import Button from "./Button";
 import mealsImage from "../assets/header.jpg";
 import NavBar from "./NavBar";
-const Header = ({ setCartIsShown }) => {
+const Header = () => {
+  const [cartItems, setCartItems, cartIsShown, setCartIsShown] =
+    useContext(MealsContext);
   return (
     <>
       <header className="header">

@@ -7,13 +7,12 @@ import "../pages/MealsPage.scss";
 import MealItem from "../Meals/MealItem";
 
 const Sharing = () => {
-  const [cartItems, setCartItems, cartIsShown, setCartIsShown] =
-    useContext(MealsContext);
+  const [cartItems, setCartItems, cartIsShown] = useContext(MealsContext);
   // console.log(cartIsShown);
   return (
     <div>
-      {cartIsShown && <Modal setCartIsShown={setCartIsShown} />}
-      <Header setCartIsShown={setCartIsShown} />
+      {cartIsShown && <Modal />}
+      <Header />
       <section className="summary">
         <h3>All our shared meals comes with 3 types of sauces</h3>
         <p>54 Abbey Road, London, UK</p>
@@ -23,7 +22,6 @@ const Sharing = () => {
           {availableSharing.map((meal) => (
             <MealItem
               key={meal.id}
-              id={meal.id}
               price={meal.price}
               description={meal.description}
               name={meal.name}
